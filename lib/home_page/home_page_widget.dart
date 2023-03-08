@@ -1,9 +1,9 @@
-import '../flutter_flow/flutter_flow_animations.dart';
-import '../flutter_flow/flutter_flow_icon_button.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
-import '../flutter_flow/flutter_flow_widgets.dart';
-import '../flutter_flow/flutter_flow_youtube_player.dart';
+import '/flutter_flow/flutter_flow_animations.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_widgets.dart';
+import '/flutter_flow/flutter_flow_youtube_player.dart';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -38,8 +38,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 1350.ms,
-          begin: 0,
-          end: 1,
+          begin: 0.0,
+          end: 1.0,
         ),
       ],
     ),
@@ -52,8 +52,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
           curve: Curves.easeInOut,
           delay: 2000.ms,
           duration: 1450.ms,
-          begin: 0,
-          end: 1,
+          begin: 0.0,
+          end: 1.0,
         ),
       ],
     ),
@@ -65,8 +65,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
           curve: Curves.easeInOut,
           delay: 4000.ms,
           duration: 1300.ms,
-          begin: 0,
-          end: 1,
+          begin: 0.0,
+          end: 1.0,
         ),
       ],
     ),
@@ -78,6 +78,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
     _model = createModel(context, () => HomePageModel());
 
     _model.textController ??= TextEditingController();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -98,8 +100,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
           backgroundColor: Colors.white,
           automaticallyImplyLeading: true,
           leading: Container(
-            width: 100,
-            height: 100,
+            width: 100.0,
+            height: 100.0,
             decoration: BoxDecoration(
               color: FlutterFlowTheme.of(context).secondaryBackground,
             ),
@@ -107,11 +109,11 @@ class _HomePageWidgetState extends State<HomePageWidget>
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(5, 0, 0, 9),
+                  padding: EdgeInsetsDirectional.fromSTEB(5.0, 0.0, 0.0, 9.0),
                   child: Image.network(
                     'https://satheejee.prutor.ai/images/sathe-moe-site-logo.png',
-                    width: 100,
-                    height: 100,
+                    width: 100.0,
+                    height: 100.0,
                     fit: BoxFit.contain,
                   ),
                 ),
@@ -119,10 +121,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
             ),
           ),
           title: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(28, 0, 0, 0),
+            padding: EdgeInsetsDirectional.fromSTEB(28.0, 0.0, 0.0, 0.0),
             child: Container(
-              width: 200,
-              height: 50,
+              width: 200.0,
+              height: 50.0,
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).secondaryBackground,
                 shape: BoxShape.rectangle,
@@ -131,14 +133,15 @@ class _HomePageWidgetState extends State<HomePageWidget>
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(10, 0, 0, 20),
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 20.0),
                     child: Text(
                       'SATHEE - JEE',
                       textAlign: TextAlign.start,
                       style: FlutterFlowTheme.of(context).bodyText1.override(
                             fontFamily: 'Poppins',
                             color: Color(0xFF112A35),
-                            fontSize: 25,
+                            fontSize: 25.0,
                             fontWeight: FontWeight.normal,
                           ),
                     ),
@@ -149,8 +152,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
           ),
           actions: [
             Container(
-              width: 100,
-              height: 100,
+              width: 100.0,
+              height: 100.0,
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).secondaryBackground,
               ),
@@ -158,16 +161,17 @@ class _HomePageWidgetState extends State<HomePageWidget>
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(20, 5, 20, 5),
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(20.0, 5.0, 20.0, 5.0),
                     child: FlutterFlowIconButton(
                       borderColor: FlutterFlowTheme.of(context).secondaryText,
-                      borderRadius: 5,
-                      borderWidth: 1,
-                      buttonSize: 60,
+                      borderRadius: 5.0,
+                      borderWidth: 1.0,
+                      buttonSize: 60.0,
                       icon: Icon(
                         Icons.menu_rounded,
                         color: FlutterFlowTheme.of(context).secondaryText,
-                        size: 20,
+                        size: 20.0,
                       ),
                       onPressed: () {
                         print('IconButton pressed ...');
@@ -179,7 +183,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
             ),
           ],
           centerTitle: true,
-          elevation: 4,
+          elevation: 4.0,
         ),
         body: SafeArea(
           child: GestureDetector(
@@ -192,8 +196,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Container(
-                      width: 400,
-                      height: 750,
+                      width: 400.0,
+                      height: 750.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
                         image: DecorationImage(
@@ -204,19 +208,19 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         ),
                       ),
                       child: ClipRRect(
-                        borderRadius: BorderRadius.circular(0),
+                        borderRadius: BorderRadius.circular(0.0),
                         child: BackdropFilter(
                           filter: ImageFilter.blur(
-                            sigmaX: 5,
-                            sigmaY: 5,
+                            sigmaX: 5.0,
+                            sigmaY: 5.0,
                           ),
                           child: Stack(
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0, -0.5),
+                                alignment: AlignmentDirectional(0.0, -0.5),
                                 child: Container(
-                                  width: 150,
-                                  height: 150,
+                                  width: 150.0,
+                                  height: 150.0,
                                   decoration: BoxDecoration(
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryBackground,
@@ -240,7 +244,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         fontFamily: 'Poppins',
                                         color: FlutterFlowTheme.of(context)
                                             .primaryBtnText,
-                                        fontSize: 35,
+                                        fontSize: 35.0,
                                         fontWeight: FontWeight.normal,
                                       ),
                                 ),
@@ -298,10 +302,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   ],
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 30, 0, 0),
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                   child: Container(
-                    width: 100,
-                    height: 75,
+                    width: 100.0,
+                    height: 75.0,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).primaryBtnText,
                       shape: BoxShape.rectangle,
@@ -312,36 +316,37 @@ class _HomePageWidgetState extends State<HomePageWidget>
                       style: FlutterFlowTheme.of(context).bodyText1.override(
                             fontFamily: 'Poppins',
                             color: Color(0xFF1A3E52),
-                            fontSize: 20,
+                            fontSize: 20.0,
                             fontWeight: FontWeight.w500,
                           ),
                     ),
                   ),
                 ),
                 Container(
-                  width: 100,
-                  height: 160,
+                  width: 100.0,
+                  height: 160.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).primaryBtnText,
                     shape: BoxShape.rectangle,
                   ),
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(30, 0, 30, 0),
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(30.0, 0.0, 30.0, 0.0),
                     child: Text(
                       'SATHEE is an initiative by the Ministry of Education to give students free learning and assessment platform. The preparation material will be available in English, Hindi, and other regional languages of India to prepare for competitive exams like JEE and NEET. ',
                       textAlign: TextAlign.center,
                       style: FlutterFlowTheme.of(context).bodyText1.override(
                             fontFamily: 'Poppins',
                             color: Color(0xFF1A3E52),
-                            fontSize: 15,
+                            fontSize: 15.0,
                             fontWeight: FontWeight.w500,
                           ),
                     ),
                   ),
                 ),
                 Container(
-                  width: 100,
-                  height: 1500,
+                  width: 100.0,
+                  height: 1500.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                   ),
@@ -352,8 +357,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(30, 30, 30, 15),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                30.0, 30.0, 30.0, 15.0),
                             child: Text(
                               'JEE Subjects',
                               textAlign: TextAlign.center,
@@ -362,7 +367,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   .override(
                                     fontFamily: 'Poppins',
                                     color: Color(0xFF1A3E52),
-                                    fontSize: 20,
+                                    fontSize: 20.0,
                                     fontWeight: FontWeight.w500,
                                   ),
                             ),
@@ -371,51 +376,51 @@ class _HomePageWidgetState extends State<HomePageWidget>
                       ),
                       Expanded(
                         child: Align(
-                          alignment: AlignmentDirectional(0, -1),
+                          alignment: AlignmentDirectional(0.0, -1.0),
                           child: Container(
-                            width: 300,
-                            height: 200,
+                            width: 300.0,
+                            height: 200.0,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
                               boxShadow: [
                                 BoxShadow(
-                                  blurRadius: 10,
+                                  blurRadius: 10.0,
                                   color: Color(0x33000000),
-                                  offset: Offset(0, 2),
+                                  offset: Offset(0.0, 2.0),
                                 )
                               ],
-                              borderRadius: BorderRadius.circular(10),
+                              borderRadius: BorderRadius.circular(10.0),
                               border: Border.all(
                                 color: Color(0x4D000000),
-                                width: 1,
+                                width: 1.0,
                               ),
                             ),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(0, 0),
+                                  alignment: AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 0, 0, 10),
+                                        0.0, 0.0, 0.0, 10.0),
                                     child: Image.network(
                                       'https://objectstorage.ap-mumbai-1.oraclecloud.com/n/bmzytd5z5pt3/b/SATHEE/o/math-banner-en.png',
-                                      width: 300,
-                                      height: 150,
+                                      width: 300.0,
+                                      height: 150.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0, 0),
+                                  alignment: AlignmentDirectional(0.0, 0.0),
                                   child: Text(
                                     'Mathematics - Class (XI)',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyText1
                                         .override(
                                           fontFamily: 'Poppins',
-                                          fontSize: 20,
+                                          fontSize: 20.0,
                                           fontWeight: FontWeight.normal,
                                         ),
                                   ),
@@ -427,51 +432,51 @@ class _HomePageWidgetState extends State<HomePageWidget>
                       ),
                       Expanded(
                         child: Align(
-                          alignment: AlignmentDirectional(0, -1),
+                          alignment: AlignmentDirectional(0.0, -1.0),
                           child: Container(
-                            width: 300,
-                            height: 200,
+                            width: 300.0,
+                            height: 200.0,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
                               boxShadow: [
                                 BoxShadow(
-                                  blurRadius: 10,
+                                  blurRadius: 10.0,
                                   color: Color(0x33000000),
-                                  offset: Offset(0, 2),
+                                  offset: Offset(0.0, 2.0),
                                 )
                               ],
-                              borderRadius: BorderRadius.circular(10),
+                              borderRadius: BorderRadius.circular(10.0),
                               border: Border.all(
                                 color: Color(0x4D000000),
-                                width: 1,
+                                width: 1.0,
                               ),
                             ),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(0, 0),
+                                  alignment: AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 0, 0, 10),
+                                        0.0, 0.0, 0.0, 10.0),
                                     child: Image.network(
                                       'https://objectstorage.ap-mumbai-1.oraclecloud.com/n/bmzytd5z5pt3/b/SATHEE/o/math-banner-en.png',
-                                      width: 300,
-                                      height: 150,
+                                      width: 300.0,
+                                      height: 150.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0, 0),
+                                  alignment: AlignmentDirectional(0.0, 0.0),
                                   child: Text(
                                     'Mathematics - Class (XII)',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyText1
                                         .override(
                                           fontFamily: 'Poppins',
-                                          fontSize: 20,
+                                          fontSize: 20.0,
                                           fontWeight: FontWeight.normal,
                                         ),
                                   ),
@@ -483,51 +488,51 @@ class _HomePageWidgetState extends State<HomePageWidget>
                       ),
                       Expanded(
                         child: Align(
-                          alignment: AlignmentDirectional(0, -1),
+                          alignment: AlignmentDirectional(0.0, -1.0),
                           child: Container(
-                            width: 300,
-                            height: 200,
+                            width: 300.0,
+                            height: 200.0,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
                               boxShadow: [
                                 BoxShadow(
-                                  blurRadius: 10,
+                                  blurRadius: 10.0,
                                   color: Color(0x33000000),
-                                  offset: Offset(0, 2),
+                                  offset: Offset(0.0, 2.0),
                                 )
                               ],
-                              borderRadius: BorderRadius.circular(10),
+                              borderRadius: BorderRadius.circular(10.0),
                               border: Border.all(
                                 color: Color(0x4D000000),
-                                width: 1,
+                                width: 1.0,
                               ),
                             ),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(0, 0),
+                                  alignment: AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 0, 0, 10),
+                                        0.0, 0.0, 0.0, 10.0),
                                     child: Image.network(
                                       'https://objectstorage.ap-mumbai-1.oraclecloud.com/n/bmzytd5z5pt3/b/SATHEE/o/chemistry-banner-en.png',
-                                      width: 300,
-                                      height: 150,
+                                      width: 300.0,
+                                      height: 150.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0, 0),
+                                  alignment: AlignmentDirectional(0.0, 0.0),
                                   child: Text(
                                     'Chemistry - Class (XI)',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyText1
                                         .override(
                                           fontFamily: 'Poppins',
-                                          fontSize: 20,
+                                          fontSize: 20.0,
                                           fontWeight: FontWeight.normal,
                                         ),
                                   ),
@@ -539,51 +544,51 @@ class _HomePageWidgetState extends State<HomePageWidget>
                       ),
                       Expanded(
                         child: Align(
-                          alignment: AlignmentDirectional(0, -1),
+                          alignment: AlignmentDirectional(0.0, -1.0),
                           child: Container(
-                            width: 300,
-                            height: 200,
+                            width: 300.0,
+                            height: 200.0,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
                               boxShadow: [
                                 BoxShadow(
-                                  blurRadius: 10,
+                                  blurRadius: 10.0,
                                   color: Color(0x33000000),
-                                  offset: Offset(0, 2),
+                                  offset: Offset(0.0, 2.0),
                                 )
                               ],
-                              borderRadius: BorderRadius.circular(10),
+                              borderRadius: BorderRadius.circular(10.0),
                               border: Border.all(
                                 color: Color(0x4D000000),
-                                width: 1,
+                                width: 1.0,
                               ),
                             ),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(0, 0),
+                                  alignment: AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 0, 0, 10),
+                                        0.0, 0.0, 0.0, 10.0),
                                     child: Image.network(
                                       'https://objectstorage.ap-mumbai-1.oraclecloud.com/n/bmzytd5z5pt3/b/SATHEE/o/chemistry-banner-en.png',
-                                      width: 300,
-                                      height: 150,
+                                      width: 300.0,
+                                      height: 150.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0, 0),
+                                  alignment: AlignmentDirectional(0.0, 0.0),
                                   child: Text(
                                     'Chemistry - Class (XII)',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyText1
                                         .override(
                                           fontFamily: 'Poppins',
-                                          fontSize: 20,
+                                          fontSize: 20.0,
                                           fontWeight: FontWeight.normal,
                                         ),
                                   ),
@@ -595,51 +600,51 @@ class _HomePageWidgetState extends State<HomePageWidget>
                       ),
                       Expanded(
                         child: Align(
-                          alignment: AlignmentDirectional(0, -1),
+                          alignment: AlignmentDirectional(0.0, -1.0),
                           child: Container(
-                            width: 300,
-                            height: 200,
+                            width: 300.0,
+                            height: 200.0,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
                               boxShadow: [
                                 BoxShadow(
-                                  blurRadius: 10,
+                                  blurRadius: 10.0,
                                   color: Color(0x33000000),
-                                  offset: Offset(0, 2),
+                                  offset: Offset(0.0, 2.0),
                                 )
                               ],
-                              borderRadius: BorderRadius.circular(10),
+                              borderRadius: BorderRadius.circular(10.0),
                               border: Border.all(
                                 color: Color(0x4D000000),
-                                width: 1,
+                                width: 1.0,
                               ),
                             ),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Align(
-                                  alignment: AlignmentDirectional(0, 0),
+                                  alignment: AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 0, 0, 10),
+                                        0.0, 0.0, 0.0, 10.0),
                                     child: Image.network(
                                       'https://objectstorage.ap-mumbai-1.oraclecloud.com/n/bmzytd5z5pt3/b/SATHEE/o/physics-banner-en.png',
-                                      width: 300,
-                                      height: 150,
+                                      width: 300.0,
+                                      height: 150.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0, 0),
+                                  alignment: AlignmentDirectional(0.0, 0.0),
                                   child: Text(
                                     'Physics - Class (XI)',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyText1
                                         .override(
                                           fontFamily: 'Poppins',
-                                          fontSize: 20,
+                                          fontSize: 20.0,
                                           fontWeight: FontWeight.normal,
                                         ),
                                   ),
@@ -651,54 +656,54 @@ class _HomePageWidgetState extends State<HomePageWidget>
                       ),
                       Expanded(
                         child: Align(
-                          alignment: AlignmentDirectional(0, -1),
+                          alignment: AlignmentDirectional(0.0, -1.0),
                           child: Container(
-                            width: 300,
-                            height: 200,
+                            width: 300.0,
+                            height: 200.0,
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
                               boxShadow: [
                                 BoxShadow(
-                                  blurRadius: 10,
+                                  blurRadius: 10.0,
                                   color: Color(0x33000000),
-                                  offset: Offset(0, 2),
+                                  offset: Offset(0.0, 2.0),
                                 )
                               ],
-                              borderRadius: BorderRadius.circular(10),
+                              borderRadius: BorderRadius.circular(10.0),
                               border: Border.all(
                                 color: Color(0x4D000000),
-                                width: 1,
+                                width: 1.0,
                               ),
                             ),
                             child: Padding(
-                              padding:
-                                  EdgeInsetsDirectional.fromSTEB(0, 0, 0, 100),
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 100.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Align(
-                                    alignment: AlignmentDirectional(0, 0),
+                                    alignment: AlignmentDirectional(0.0, 0.0),
                                     child: Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          0, 0, 0, 10),
+                                          0.0, 0.0, 0.0, 10.0),
                                       child: Image.network(
                                         'https://objectstorage.ap-mumbai-1.oraclecloud.com/n/bmzytd5z5pt3/b/SATHEE/o/physics-banner-en.png',
-                                        width: 300,
-                                        height: 150,
+                                        width: 300.0,
+                                        height: 150.0,
                                         fit: BoxFit.cover,
                                       ),
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0, 0),
+                                    alignment: AlignmentDirectional(0.0, 0.0),
                                     child: Text(
                                       'Physics - Class (XII)',
                                       style: FlutterFlowTheme.of(context)
                                           .bodyText1
                                           .override(
                                             fontFamily: 'Poppins',
-                                            fontSize: 20,
+                                            fontSize: 20.0,
                                             fontWeight: FontWeight.normal,
                                           ),
                                     ),
@@ -713,8 +718,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   ),
                 ),
                 Container(
-                  width: 100,
-                  height: 100,
+                  width: 100.0,
+                  height: 100.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                   ),
@@ -723,14 +728,15 @@ class _HomePageWidgetState extends State<HomePageWidget>
                     children: [
                       Expanded(
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 40, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 40.0, 0.0, 0.0),
                           child: Text(
                             'Our Experts',
                             textAlign: TextAlign.center,
                             style: FlutterFlowTheme.of(context).title1.override(
                                   fontFamily: 'Poppins',
                                   color: Color(0xFF1C3B45),
-                                  fontSize: 28,
+                                  fontSize: 28.0,
                                   fontWeight: FontWeight.normal,
                                 ),
                           ),
@@ -740,46 +746,48 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
+                  padding:
+                      EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
                   child: Container(
-                    width: 200,
-                    height: 300,
+                    width: 200.0,
+                    height: 300.0,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
                       boxShadow: [
                         BoxShadow(
-                          blurRadius: 40,
+                          blurRadius: 40.0,
                           color: Color(0x33000000),
-                          offset: Offset(0, 2),
+                          offset: Offset(0.0, 2.0),
                         )
                       ],
-                      borderRadius: BorderRadius.circular(0),
+                      borderRadius: BorderRadius.circular(0.0),
                       border: Border.all(
-                        width: 1,
+                        width: 1.0,
                       ),
                     ),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 10.0, 0.0, 0.0),
                           child: Text(
                             'Mathematics Faculty',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF1B4053),
-                                      fontSize: 30,
+                                      fontSize: 30.0,
                                       fontWeight: FontWeight.normal,
                                     ),
                           ),
                         ),
                         ClipRRect(
-                          borderRadius: BorderRadius.circular(0),
+                          borderRadius: BorderRadius.circular(0.0),
                           child: Image.network(
                             'https://satheejee.prutor.ai/images/math-experts.jpg',
-                            width: 400,
-                            height: 240,
+                            width: 400.0,
+                            height: 240.0,
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -788,46 +796,48 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
+                  padding:
+                      EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
                   child: Container(
-                    width: 200,
-                    height: 300,
+                    width: 200.0,
+                    height: 300.0,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
                       boxShadow: [
                         BoxShadow(
-                          blurRadius: 40,
+                          blurRadius: 40.0,
                           color: Color(0x33000000),
-                          offset: Offset(0, 2),
+                          offset: Offset(0.0, 2.0),
                         )
                       ],
-                      borderRadius: BorderRadius.circular(0),
+                      borderRadius: BorderRadius.circular(0.0),
                       border: Border.all(
-                        width: 1,
+                        width: 1.0,
                       ),
                     ),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 10.0, 0.0, 0.0),
                           child: Text(
                             'Chemistry Faculty',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF1B4053),
-                                      fontSize: 30,
+                                      fontSize: 30.0,
                                       fontWeight: FontWeight.normal,
                                     ),
                           ),
                         ),
                         ClipRRect(
-                          borderRadius: BorderRadius.circular(0),
+                          borderRadius: BorderRadius.circular(0.0),
                           child: Image.network(
                             'https://satheejee.prutor.ai/images/che-experts.jpg',
-                            width: 400,
-                            height: 240,
+                            width: 400.0,
+                            height: 240.0,
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -836,46 +846,48 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(10, 10, 10, 10),
+                  padding:
+                      EdgeInsetsDirectional.fromSTEB(10.0, 10.0, 10.0, 10.0),
                   child: Container(
-                    width: 200,
-                    height: 300,
+                    width: 200.0,
+                    height: 300.0,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
                       boxShadow: [
                         BoxShadow(
-                          blurRadius: 40,
+                          blurRadius: 40.0,
                           color: Color(0x33000000),
-                          offset: Offset(0, 2),
+                          offset: Offset(0.0, 2.0),
                         )
                       ],
-                      borderRadius: BorderRadius.circular(0),
+                      borderRadius: BorderRadius.circular(0.0),
                       border: Border.all(
-                        width: 1,
+                        width: 1.0,
                       ),
                     ),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 10.0, 0.0, 0.0),
                           child: Text(
                             'Physics  Faculty',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF1B4053),
-                                      fontSize: 30,
+                                      fontSize: 30.0,
                                       fontWeight: FontWeight.normal,
                                     ),
                           ),
                         ),
                         ClipRRect(
-                          borderRadius: BorderRadius.circular(0),
+                          borderRadius: BorderRadius.circular(0.0),
                           child: Image.network(
                             'https://satheejee.prutor.ai/images/phy-experts.jpg',
-                            width: 400,
-                            height: 240,
+                            width: 400.0,
+                            height: 240.0,
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -884,8 +896,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   ),
                 ),
                 Container(
-                  width: 100,
-                  height: 350,
+                  width: 100.0,
+                  height: 350.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                   ),
@@ -893,7 +905,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 10, 0, 10),
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            0.0, 10.0, 0.0, 10.0),
                         child: Text(
                           'SATHEE your partner to crack JEE exam',
                           textAlign: TextAlign.center,
@@ -901,14 +914,14 @@ class _HomePageWidgetState extends State<HomePageWidget>
                               FlutterFlowTheme.of(context).bodyText1.override(
                                     fontFamily: 'Poppins',
                                     color: Color(0xFF213447),
-                                    fontSize: 30,
+                                    fontSize: 30.0,
                                     fontWeight: FontWeight.normal,
                                   ),
                         ),
                       ),
                       FlutterFlowYoutubePlayer(
                         url: 'https://youtu.be/npbCL23kDKk',
-                        width: 370,
+                        width: 370.0,
                         autoPlay: false,
                         looping: true,
                         mute: false,
@@ -916,8 +929,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         showFullScreen: true,
                       ),
                       Container(
-                        width: 100,
-                        height: 100,
+                        width: 100.0,
+                        height: 100.0,
                         decoration: BoxDecoration(
                           color:
                               FlutterFlowTheme.of(context).secondaryBackground,
@@ -927,8 +940,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   ),
                 ),
                 Container(
-                  width: 100,
-                  height: 900,
+                  width: 100.0,
+                  height: 900.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                   ),
@@ -939,8 +952,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding:
-                                EdgeInsetsDirectional.fromSTEB(0, 30, 0, 0),
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                0.0, 30.0, 0.0, 0.0),
                             child: Text(
                               'Learning Journey with SATHEE',
                               textAlign: TextAlign.center,
@@ -949,7 +962,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   .override(
                                     fontFamily: 'Poppins',
                                     color: Color(0xFF203844),
-                                    fontSize: 30,
+                                    fontSize: 30.0,
                                     fontWeight: FontWeight.normal,
                                   ),
                             ),
@@ -957,41 +970,42 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         ],
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 30, 0, 0),
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                         child: Container(
-                          width: 350,
-                          height: 150,
+                          width: 350.0,
+                          height: 150.0,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15.0),
                             border: Border.all(
                               color: FlutterFlowTheme.of(context).secondaryText,
-                              width: 1,
+                              width: 1.0,
                             ),
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(-0.7, 0),
+                            alignment: AlignmentDirectional(-0.7, 0.0),
                             child: Stack(
                               children: [
                                 Align(
                                   alignment: AlignmentDirectional(-0.85, -0.3),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 10, 0, 0),
+                                        0.0, 10.0, 0.0, 0.0),
                                     child: Image.network(
                                       'https://satheejee.prutor.ai/images/mortarboard-icon.png',
-                                      width: 100,
-                                      height: 100,
+                                      width: 100.0,
+                                      height: 100.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.35, 0),
+                                  alignment: AlignmentDirectional(0.35, 0.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        130, 0, 10, 0),
+                                        130.0, 0.0, 10.0, 0.0),
                                     child: Text(
                                       'Start learning from in depth video lectures by IIT professors',
                                       textAlign: TextAlign.start,
@@ -999,7 +1013,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           .bodyText1
                                           .override(
                                             fontFamily: 'Poppins',
-                                            fontSize: 18,
+                                            fontSize: 18.0,
                                             fontWeight: FontWeight.normal,
                                           ),
                                     ),
@@ -1011,41 +1025,42 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 30, 0, 0),
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                         child: Container(
-                          width: 350,
-                          height: 150,
+                          width: 350.0,
+                          height: 150.0,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15.0),
                             border: Border.all(
                               color: FlutterFlowTheme.of(context).secondaryText,
-                              width: 1,
+                              width: 1.0,
                             ),
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(-0.7, 0),
+                            alignment: AlignmentDirectional(-0.7, 0.0),
                             child: Stack(
                               children: [
                                 Align(
                                   alignment: AlignmentDirectional(-0.85, -0.3),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 10, 0, 0),
+                                        0.0, 10.0, 0.0, 0.0),
                                     child: Image.network(
                                       'https://satheejee.prutor.ai/images/group-icon.png',
-                                      width: 100,
-                                      height: 100,
+                                      width: 100.0,
+                                      height: 100.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.35, 0),
+                                  alignment: AlignmentDirectional(0.35, 0.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        130, 0, 10, 0),
+                                        130.0, 0.0, 10.0, 0.0),
                                     child: Text(
                                       'Get access to forums / mentors for doubt clearing and problems solution',
                                       textAlign: TextAlign.start,
@@ -1053,7 +1068,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           .bodyText1
                                           .override(
                                             fontFamily: 'Poppins',
-                                            fontSize: 18,
+                                            fontSize: 18.0,
                                             fontWeight: FontWeight.normal,
                                           ),
                                     ),
@@ -1065,41 +1080,42 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 30, 0, 0),
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                         child: Container(
-                          width: 350,
-                          height: 150,
+                          width: 350.0,
+                          height: 150.0,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15.0),
                             border: Border.all(
                               color: FlutterFlowTheme.of(context).secondaryText,
-                              width: 1,
+                              width: 1.0,
                             ),
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(-0.7, 0),
+                            alignment: AlignmentDirectional(-0.7, 0.0),
                             child: Stack(
                               children: [
                                 Align(
                                   alignment: AlignmentDirectional(-0.85, -0.3),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 10, 0, 0),
+                                        0.0, 10.0, 0.0, 0.0),
                                     child: Image.network(
                                       'https://satheejee.prutor.ai/images/projects-icon.png',
-                                      width: 100,
-                                      height: 100,
+                                      width: 100.0,
+                                      height: 100.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.35, 0),
+                                  alignment: AlignmentDirectional(0.35, 0.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        130, 0, 10, 0),
+                                        130.0, 0.0, 10.0, 0.0),
                                     child: Text(
                                       'Test your knowledge with topic / subjects / complete tests',
                                       textAlign: TextAlign.start,
@@ -1107,7 +1123,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           .bodyText1
                                           .override(
                                             fontFamily: 'Poppins',
-                                            fontSize: 18,
+                                            fontSize: 18.0,
                                             fontWeight: FontWeight.normal,
                                           ),
                                     ),
@@ -1119,41 +1135,42 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 30, 0, 0),
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 30.0, 0.0, 0.0),
                         child: Container(
-                          width: 350,
-                          height: 150,
+                          width: 350.0,
+                          height: 150.0,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15.0),
                             border: Border.all(
                               color: FlutterFlowTheme.of(context).secondaryText,
-                              width: 1,
+                              width: 1.0,
                             ),
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(-0.7, 0),
+                            alignment: AlignmentDirectional(-0.7, 0.0),
                             child: Stack(
                               children: [
                                 Align(
                                   alignment: AlignmentDirectional(-0.85, -0.3),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        0, 10, 0, 0),
+                                        0.0, 10.0, 0.0, 0.0),
                                     child: Image.network(
                                       'https://satheejee.prutor.ai/images/001-skills.png',
-                                      width: 100,
-                                      height: 100,
+                                      width: 100.0,
+                                      height: 100.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.35, 0),
+                                  alignment: AlignmentDirectional(0.35, 0.0),
                                   child: Padding(
                                     padding: EdgeInsetsDirectional.fromSTEB(
-                                        130, 0, 10, 0),
+                                        130.0, 0.0, 10.0, 0.0),
                                     child: Text(
                                       'Analyse and improve yourself using detailed analytics',
                                       textAlign: TextAlign.start,
@@ -1161,7 +1178,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                           .bodyText1
                                           .override(
                                             fontFamily: 'Poppins',
-                                            fontSize: 18,
+                                            fontSize: 18.0,
                                             fontWeight: FontWeight.normal,
                                           ),
                                     ),
@@ -1176,8 +1193,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   ),
                 ),
                 Container(
-                  width: 100,
-                  height: 1555,
+                  width: 100.0,
+                  height: 1555.0,
                   decoration: BoxDecoration(
                     color: Color(0xFF112A35),
                   ),
@@ -1185,9 +1202,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Align(
-                        alignment: AlignmentDirectional(-0.9, 0),
+                        alignment: AlignmentDirectional(-0.9, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(10, 40, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              10.0, 40.0, 0.0, 0.0),
                           child: Text(
                             'About Us',
                             style:
@@ -1195,80 +1213,85 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       fontFamily: 'Poppins',
                                       color: FlutterFlowTheme.of(context)
                                           .primaryBtnText,
-                                      fontSize: 20,
+                                      fontSize: 20.0,
                                       fontWeight: FontWeight.w500,
                                     ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.9, 0),
+                        alignment: AlignmentDirectional(-0.9, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(10, 10, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              10.0, 10.0, 0.0, 0.0),
                           child: Text(
                             'About',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF798790),
-                                      fontSize: 20,
+                                      fontSize: 20.0,
                                       fontWeight: FontWeight.w500,
                                     ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.9, 0),
+                        alignment: AlignmentDirectional(-0.9, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(10, 10, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              10.0, 10.0, 0.0, 0.0),
                           child: Text(
                             'Our Experts',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF798790),
-                                      fontSize: 20,
+                                      fontSize: 20.0,
                                       fontWeight: FontWeight.w500,
                                     ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.9, 0),
+                        alignment: AlignmentDirectional(-0.9, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(22, 10, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              22.0, 10.0, 0.0, 0.0),
                           child: Text(
                             'SATHEE your partner to crack JEE exam',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF798790),
-                                      fontSize: 18,
+                                      fontSize: 18.0,
                                       fontWeight: FontWeight.w500,
                                     ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.9, 0),
+                        alignment: AlignmentDirectional(-0.9, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(20, 10, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              20.0, 10.0, 0.0, 0.0),
                           child: Text(
                             'Learning Journey with SATHEE',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF798790),
-                                      fontSize: 20,
+                                      fontSize: 20.0,
                                       fontWeight: FontWeight.w500,
                                     ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.9, 0),
+                        alignment: AlignmentDirectional(-0.9, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(10, 40, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              10.0, 40.0, 0.0, 0.0),
                           child: Text(
                             'Contact Me',
                             style:
@@ -1276,17 +1299,17 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       fontFamily: 'Poppins',
                                       color: FlutterFlowTheme.of(context)
                                           .primaryBtnText,
-                                      fontSize: 20,
+                                      fontSize: 20.0,
                                       fontWeight: FontWeight.w500,
                                     ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.95, 0),
+                        alignment: AlignmentDirectional(-0.95, 0.0),
                         child: Container(
-                          width: 300,
-                          height: 60,
+                          width: 300.0,
+                          height: 60.0,
                           decoration: BoxDecoration(
                             color: Color(0xFF112A35),
                           ),
@@ -1297,17 +1320,17 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                 alignment: AlignmentDirectional(-0.85, -0.7),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      10, 0, 0, 15),
+                                      10.0, 0.0, 0.0, 15.0),
                                   child: FlutterFlowIconButton(
                                     borderColor: Colors.transparent,
-                                    borderRadius: 2,
-                                    borderWidth: 1,
-                                    buttonSize: 40,
+                                    borderRadius: 2.0,
+                                    borderWidth: 1.0,
+                                    buttonSize: 40.0,
                                     icon: Icon(
                                       Icons.mail,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryBtnText,
-                                      size: 25,
+                                      size: 25.0,
                                     ),
                                     onPressed: () {
                                       print('IconButton pressed ...');
@@ -1316,10 +1339,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0, 0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      5, 0, 0, 10),
+                                      5.0, 0.0, 0.0, 10.0),
                                   child: Text(
                                     'prutor@iitk.ac.in',
                                     style: FlutterFlowTheme.of(context)
@@ -1327,7 +1350,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         .override(
                                           fontFamily: 'Poppins',
                                           color: Color(0xFF707C87),
-                                          fontSize: 20,
+                                          fontSize: 20.0,
                                           fontWeight: FontWeight.normal,
                                         ),
                                   ),
@@ -1338,10 +1361,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.95, 0),
+                        alignment: AlignmentDirectional(-0.95, 0.0),
                         child: Container(
-                          width: 300,
-                          height: 60,
+                          width: 300.0,
+                          height: 60.0,
                           decoration: BoxDecoration(
                             color: Color(0xFF112A35),
                           ),
@@ -1352,17 +1375,17 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                 alignment: AlignmentDirectional(-0.85, -0.7),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      10, 0, 0, 15),
+                                      10.0, 0.0, 0.0, 15.0),
                                   child: FlutterFlowIconButton(
                                     borderColor: Colors.transparent,
-                                    borderRadius: 2,
-                                    borderWidth: 1,
-                                    buttonSize: 40,
+                                    borderRadius: 2.0,
+                                    borderWidth: 1.0,
+                                    buttonSize: 40.0,
                                     icon: FaIcon(
                                       FontAwesomeIcons.whatsapp,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryBtnText,
-                                      size: 25,
+                                      size: 25.0,
                                     ),
                                     onPressed: () {
                                       print('IconButton pressed ...');
@@ -1371,10 +1394,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0, 0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      5, 0, 0, 10),
+                                      5.0, 0.0, 0.0, 10.0),
                                   child: Text(
                                     '+91-8953463074',
                                     style: FlutterFlowTheme.of(context)
@@ -1382,7 +1405,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         .override(
                                           fontFamily: 'Poppins',
                                           color: Color(0xFF707C87),
-                                          fontSize: 20,
+                                          fontSize: 20.0,
                                           fontWeight: FontWeight.normal,
                                         ),
                                   ),
@@ -1393,9 +1416,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.9, 0),
+                        alignment: AlignmentDirectional(-0.9, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(10, 30, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              10.0, 30.0, 0.0, 0.0),
                           child: Text(
                             'Follow us on',
                             style:
@@ -1403,17 +1427,17 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       fontFamily: 'Poppins',
                                       color: FlutterFlowTheme.of(context)
                                           .primaryBtnText,
-                                      fontSize: 20,
+                                      fontSize: 20.0,
                                       fontWeight: FontWeight.w500,
                                     ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.95, 0),
+                        alignment: AlignmentDirectional(-0.95, 0.0),
                         child: Container(
-                          width: 300,
-                          height: 60,
+                          width: 300.0,
+                          height: 60.0,
                           decoration: BoxDecoration(
                             color: Color(0xFF112A35),
                           ),
@@ -1424,17 +1448,17 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                 alignment: AlignmentDirectional(-0.85, -0.7),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      10, 0, 0, 15),
+                                      10.0, 0.0, 0.0, 15.0),
                                   child: FlutterFlowIconButton(
                                     borderColor: Colors.transparent,
-                                    borderRadius: 2,
-                                    borderWidth: 1,
-                                    buttonSize: 40,
+                                    borderRadius: 2.0,
+                                    borderWidth: 1.0,
+                                    buttonSize: 40.0,
                                     icon: FaIcon(
                                       FontAwesomeIcons.twitter,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryBtnText,
-                                      size: 25,
+                                      size: 25.0,
                                     ),
                                     onPressed: () {
                                       print('IconButton pressed ...');
@@ -1443,10 +1467,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0, 0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      5, 0, 0, 10),
+                                      5.0, 0.0, 0.0, 10.0),
                                   child: Text(
                                     'Twitter',
                                     style: FlutterFlowTheme.of(context)
@@ -1454,7 +1478,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         .override(
                                           fontFamily: 'Poppins',
                                           color: Color(0xFF707C87),
-                                          fontSize: 20,
+                                          fontSize: 20.0,
                                           fontWeight: FontWeight.normal,
                                         ),
                                   ),
@@ -1465,10 +1489,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.95, 0),
+                        alignment: AlignmentDirectional(-0.95, 0.0),
                         child: Container(
-                          width: 300,
-                          height: 60,
+                          width: 300.0,
+                          height: 60.0,
                           decoration: BoxDecoration(
                             color: Color(0xFF112A35),
                           ),
@@ -1479,17 +1503,17 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                 alignment: AlignmentDirectional(-0.85, -0.7),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      10, 0, 0, 15),
+                                      10.0, 0.0, 0.0, 15.0),
                                   child: FlutterFlowIconButton(
                                     borderColor: Colors.transparent,
-                                    borderRadius: 2,
-                                    borderWidth: 1,
-                                    buttonSize: 40,
+                                    borderRadius: 2.0,
+                                    borderWidth: 1.0,
+                                    buttonSize: 40.0,
                                     icon: FaIcon(
                                       FontAwesomeIcons.facebook,
                                       color: FlutterFlowTheme.of(context)
                                           .primaryBtnText,
-                                      size: 25,
+                                      size: 25.0,
                                     ),
                                     onPressed: () {
                                       print('IconButton pressed ...');
@@ -1498,10 +1522,10 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                 ),
                               ),
                               Align(
-                                alignment: AlignmentDirectional(0, 0),
+                                alignment: AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
                                   padding: EdgeInsetsDirectional.fromSTEB(
-                                      5, 0, 0, 10),
+                                      5.0, 0.0, 0.0, 10.0),
                                   child: Text(
                                     'Facebook',
                                     style: FlutterFlowTheme.of(context)
@@ -1509,7 +1533,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                         .override(
                                           fontFamily: 'Poppins',
                                           color: Color(0xFF707C87),
-                                          fontSize: 20,
+                                          fontSize: 20.0,
                                           fontWeight: FontWeight.normal,
                                         ),
                                   ),
@@ -1520,24 +1544,25 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.65, 0),
+                        alignment: AlignmentDirectional(-0.65, 0.0),
                         child: Padding(
-                          padding:
-                              EdgeInsetsDirectional.fromSTEB(15, 15, 0, 10),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              15.0, 15.0, 0.0, 10.0),
                           child: Text(
                             'Stay up to date with email notification',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF707C87),
-                                      fontSize: 18,
+                                      fontSize: 18.0,
                                       fontWeight: FontWeight.normal,
                                     ),
                           ),
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(20, 0, 20, 0),
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            20.0, 0.0, 20.0, 0.0),
                         child: TextFormField(
                           controller: _model.textController,
                           autofocus: true,
@@ -1547,13 +1572,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                             hintStyle:
                                 FlutterFlowTheme.of(context).bodyText2.override(
                                       fontFamily: 'Poppins',
-                                      fontSize: 16,
+                                      fontSize: 16.0,
                                       fontWeight: FontWeight.normal,
                                     ),
                             enabledBorder: OutlineInputBorder(
                               borderSide: BorderSide(
                                 color: Color(0xFF63707A),
-                                width: 2,
+                                width: 2.0,
                               ),
                               borderRadius: const BorderRadius.only(
                                 topLeft: Radius.circular(4.0),
@@ -1563,7 +1588,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                             focusedBorder: OutlineInputBorder(
                               borderSide: BorderSide(
                                 color: Color(0x00000000),
-                                width: 2,
+                                width: 2.0,
                               ),
                               borderRadius: const BorderRadius.only(
                                 topLeft: Radius.circular(4.0),
@@ -1573,7 +1598,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                             errorBorder: OutlineInputBorder(
                               borderSide: BorderSide(
                                 color: Color(0x00000000),
-                                width: 2,
+                                width: 2.0,
                               ),
                               borderRadius: const BorderRadius.only(
                                 topLeft: Radius.circular(4.0),
@@ -1583,7 +1608,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                             focusedErrorBorder: OutlineInputBorder(
                               borderSide: BorderSide(
                                 color: Color(0x00000000),
-                                width: 2,
+                                width: 2.0,
                               ),
                               borderRadius: const BorderRadius.only(
                                 topLeft: Radius.circular(4.0),
@@ -1604,7 +1629,8 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(20, 5, 20, 0),
+                        padding: EdgeInsetsDirectional.fromSTEB(
+                            20.0, 5.0, 20.0, 0.0),
                         child: Text(
                           'By entering your email address, you agree to receive the newsletter of this website.',
                           style:
@@ -1616,17 +1642,22 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.85, 0),
+                        alignment: AlignmentDirectional(-0.85, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 5, 0, 0),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              0.0, 5.0, 0.0, 0.0),
                           child: FFButtonWidget(
                             onPressed: () {
                               print('Button pressed ...');
                             },
                             text: 'submit',
                             options: FFButtonOptions(
-                              width: 100,
-                              height: 40,
+                              width: 100.0,
+                              height: 40.0,
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
+                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                  0.0, 0.0, 0.0, 0.0),
                               color: Color(0xFF2C80A1),
                               textStyle: FlutterFlowTheme.of(context)
                                   .subtitle2
@@ -1637,239 +1668,253 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                   ),
                               borderSide: BorderSide(
                                 color: Colors.transparent,
-                                width: 1,
+                                width: 1.0,
                               ),
-                              borderRadius: BorderRadius.circular(8),
+                              borderRadius: BorderRadius.circular(8.0),
                             ),
                           ),
                         ),
                       ),
                       Divider(
-                        height: 100,
+                        height: 100.0,
                         thickness: 0.5,
-                        indent: 15,
-                        endIndent: 15,
+                        indent: 15.0,
+                        endIndent: 15.0,
                         color: FlutterFlowTheme.of(context).primaryBtnText,
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.85, 0),
+                        alignment: AlignmentDirectional(-0.85, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(5, 0, 0, 10),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              5.0, 0.0, 0.0, 10.0),
                           child: Text(
                             'Subjects',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF707C87),
-                                      fontSize: 20,
+                                      fontSize: 20.0,
                                       fontWeight: FontWeight.normal,
                                     ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.85, 0),
+                        alignment: AlignmentDirectional(-0.85, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(8, 0, 0, 10),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              8.0, 0.0, 0.0, 10.0),
                           child: Text(
                             'Solve with Me',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF707C87),
-                                      fontSize: 20,
+                                      fontSize: 20.0,
                                       fontWeight: FontWeight.normal,
                                     ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.8, 0),
+                        alignment: AlignmentDirectional(-0.85, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(5, 0, 0, 10),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              10.0, 0.0, 0.0, 10.0),
                           child: Text(
                             'JEE का तोड़ Webinar',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF707C87),
-                                      fontSize: 20,
+                                      fontSize: 20.0,
                                       fontWeight: FontWeight.normal,
                                     ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.85, 0),
+                        alignment: AlignmentDirectional(-0.85, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(4, 0, 0, 10),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              4.0, 0.0, 0.0, 10.0),
                           child: Text(
                             'JEE-Test',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF707C87),
-                                      fontSize: 20,
+                                      fontSize: 20.0,
                                       fontWeight: FontWeight.normal,
                                     ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.85, 0),
+                        alignment: AlignmentDirectional(-0.85, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(4, 0, 0, 10),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              4.0, 0.0, 0.0, 10.0),
                           child: Text(
                             'Resources',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF707C87),
-                                      fontSize: 20,
+                                      fontSize: 20.0,
                                       fontWeight: FontWeight.normal,
                                     ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.85, 0),
+                        alignment: AlignmentDirectional(-0.85, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(6, 30, 0, 10),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              6.0, 30.0, 0.0, 10.0),
                           child: Text(
                             'Announcements',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF707C87),
-                                      fontSize: 20,
+                                      fontSize: 20.0,
                                       fontWeight: FontWeight.normal,
                                     ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.85, 0),
+                        alignment: AlignmentDirectional(-0.85, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(4, 0, 0, 10),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              4.0, 0.0, 0.0, 10.0),
                           child: Text(
                             'For Schools',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF707C87),
-                                      fontSize: 20,
+                                      fontSize: 20.0,
                                       fontWeight: FontWeight.normal,
                                     ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.85, 0),
+                        alignment: AlignmentDirectional(-0.85, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(4, 0, 0, 10),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              4.0, 0.0, 0.0, 10.0),
                           child: Text(
                             'For Parents',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF707C87),
-                                      fontSize: 20,
+                                      fontSize: 20.0,
                                       fontWeight: FontWeight.normal,
                                     ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.85, 0),
+                        alignment: AlignmentDirectional(-0.85, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(4, 0, 0, 10),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              4.0, 0.0, 0.0, 10.0),
                           child: Text(
                             'Get Mentorship',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF707C87),
-                                      fontSize: 20,
+                                      fontSize: 20.0,
                                       fontWeight: FontWeight.normal,
                                     ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.85, 0),
+                        alignment: AlignmentDirectional(-0.85, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(4, 0, 0, 10),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              4.0, 0.0, 0.0, 10.0),
                           child: Text(
                             'Live Sessions',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF707C87),
-                                      fontSize: 20,
+                                      fontSize: 20.0,
                                       fontWeight: FontWeight.normal,
                                     ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.85, 0),
+                        alignment: AlignmentDirectional(-0.85, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(6, 30, 0, 10),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              6.0, 30.0, 0.0, 10.0),
                           child: Text(
                             'Syllabus for JEE (Main)',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF707C87),
-                                      fontSize: 20,
+                                      fontSize: 20.0,
                                       fontWeight: FontWeight.normal,
                                     ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.85, 0),
+                        alignment: AlignmentDirectional(-0.85, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(3, 0, 0, 10),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              3.0, 0.0, 0.0, 10.0),
                           child: Text(
                             'Physics (Forum)',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF707C87),
-                                      fontSize: 20,
+                                      fontSize: 20.0,
                                       fontWeight: FontWeight.normal,
                                     ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.85, 0),
+                        alignment: AlignmentDirectional(-0.85, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(3, 0, 0, 10),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              3.0, 0.0, 0.0, 10.0),
                           child: Text(
                             'Chemistry (Forum)',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF707C87),
-                                      fontSize: 20,
+                                      fontSize: 20.0,
                                       fontWeight: FontWeight.normal,
                                     ),
                           ),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-0.85, 0),
+                        alignment: AlignmentDirectional(-0.85, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(3, 0, 0, 10),
+                          padding: EdgeInsetsDirectional.fromSTEB(
+                              3.0, 0.0, 0.0, 10.0),
                           child: Text(
                             'Mathematics (Forum)',
                             style:
                                 FlutterFlowTheme.of(context).bodyText1.override(
                                       fontFamily: 'Poppins',
                                       color: Color(0xFF707C87),
-                                      fontSize: 20,
+                                      fontSize: 20.0,
                                       fontWeight: FontWeight.normal,
                                     ),
                           ),
@@ -1879,43 +1924,43 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   ),
                 ),
                 Container(
-                  width: 100,
-                  height: 100,
+                  width: 100.0,
+                  height: 100.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                   ),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(80, 0, 0, 0),
-                        child: Image.network(
-                          'https://satheejee.prutor.ai/images/moe-goi-logo.png',
-                          width: 200,
-                          height: 100,
-                          fit: BoxFit.contain,
-                        ),
+                      Image.network(
+                        'https://satheejee.prutor.ai/images/moe-goi-logo.png',
+                        width: 200.0,
+                        height: 100.0,
+                        fit: BoxFit.contain,
                       ),
                       Image.network(
                         'https://satheejee.prutor.ai/images/sathee.png',
-                        width: 80,
-                        height: 60,
+                        width: 80.0,
+                        height: 60.0,
                         fit: BoxFit.contain,
                       ),
                     ],
                   ),
                 ),
                 Container(
-                  width: 100,
-                  height: 100,
+                  width: 100.0,
+                  height: 100.0,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                   ),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 10.0),
                         child: Text(
                           '© 2023 Copyright SATHEE',
                           style: FlutterFlowTheme.of(context)
@@ -1923,7 +1968,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                               .override(
                                 fontFamily: 'Poppins',
                                 color: FlutterFlowTheme.of(context).primaryText,
-                                fontSize: 23,
+                                fontSize: 23.0,
                                 fontWeight: FontWeight.w300,
                               ),
                         ),
@@ -1932,7 +1977,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                         'Powered By Prutor@IITK ',
                         style: FlutterFlowTheme.of(context).bodyText1.override(
                               fontFamily: 'Poppins',
-                              fontSize: 18,
+                              fontSize: 18.0,
                               fontWeight: FontWeight.w500,
                             ),
                       ),
